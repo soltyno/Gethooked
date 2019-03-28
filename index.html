@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- Desktop Navigation Bar -->
+        <nav>
+            <div class="nav_desktop">
+                <div class="nav_desktop_logo">
+                    <a onclick="ScrollToHome()"><img src="img/logo.png" alt="Logo" onmouseover="this.src='img/logo-blue.png'"
+                            onmouseout="this.src='img/logo.png'"></a>
+                </div>
+                <ul>
+                    <li><a onclick="ScrollToHome()">Home</a></li>
+                    <li><a onclick="ScrollToAbout()">About the campaign</a></li>
+                    <li><a href="https://drive.google.com/open?id=1csI8mfmdTj74FykT42EsxNkFsDT506lF" target="_blank">See
+                            the original report</a></li>
+                    <a onclick="ScrollToPetition()" class="petition_button">Take action</a>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Menu Icon -->
+        <div class="menuIcon">
+            <span class="icon icon-bars"></span>
+            <span class="icon icon-bars overlay"></span>
+
+        </div>
+
+        <!-- Overlay Menu -->
+        <div class="nav_mobile">
+            <ul class="nav_mobile_menu">
+                <li><a onclick="myFunction(),ScrollToHome()">Home</a></li>
+                <li><a onclick="myFunction(),ScrollToAbout()" class="close_btn">About the campaign</a></li>
+                <li><a onclick="myFunction()" href="https://drive.google.com/open?id=1csI8mfmdTj74FykT42EsxNkFsDT506lF"
+                        target="_blank">See
+                        the original report</a></li>
+                <button onclick="myFunction(),ScrollToPetition()" class="petition_button close_btn">Take action</button>
+            </ul>
+        </div>
+
+        <div id="home" class="header">
+            <div class="header_headings">
+                <h1 class="header_heading">#gethooked</h1>
+                <h2 class="header_description">Approximately 120 billion farmed fish are killed yearly, meaning they
+                    are
+                    number 1 on the list of slaughtered animals, yet there are almost no regulations regarding the
+                    welfare
+                    of the fishes nor even discussions on this topic. You might ask why is it such a big issue? Well,
+                    there
+                    is more to the topic than you might think.</h2>
+                <a onclick="ScrollToAbout()"><button class="header_button">Learn more</button></a>
+            </div>
+            <img onclick="ScrollToAnima()" src="img/icons/arrow.png" alt="arrow" class="arrow"></img>
+        </div>
+
+
+    </header>
+
+
+    <main>
+
+        <section id="scroll_anima" class="section_anima">
+            <h2 class="section_anima_heading">Under the auspicies of</h2>
+            <a href="https://anima.dk" class="section_anima_logo"><img class="anima_logo" onmouseover="this.src='img/logo-anima-hover.png'"
+                    onmouseout="this.src='img/logo-anima.png'" src="img/logo-anima.png" alt="Anima Logo">
+            </a>
+        </section>
+
+        <section id="about" class="section_video">
+            <div class="section_video_container">
+                <video controls>
+                    <source src="img/movie.mp4" type="video/mp4">
+                </video></div>
+        </section>
+
+        <section class="section_01">
+            <div class="section_01_image">
+                <img src="img/img_1.png" alt="img_1">
+                <img src="img/fish_1.png" alt="Fish" class="image_fish_1">
+            </div>
+            <div class="section_01_text">
+                <h2 class="section_numbers">01.</h2>
+                <h2 class="section_heading">Current situation</h2>
+                <div class="section_text">
+                    <p class="section_text_box-1">Fishes are either captured with methods that are <b>extremely painful</b> or
+                        are farmed in <b>crowded and highly unnatural environment</b>. 
+                    </p>
+                    <p class="section_text_box-2">At the end they are usually <b>gutted
+                            alive</b> which results in slow and painful death.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_02">
+            <div class="section_02_image">
+                <img src="img/img_2.png" alt="img_2">
+                <img src="img/fish_2.png" alt="Fish" class="image_fish_2">
+            </div>
+            <div class="section_02_text">
+                <h2 class="section_numbers">02.</h2>
+                <h2 class="section_heading">Fish can feel</h2>
+                <div class="section_text">
+                    <p class="section_text_box-1">In a book ‘Do Fish Feel Pain?’, the author, biologist Victoria
+                        Braithwaite says that “there is as much evidence that fish <b>feel pain and suffer as there is
+                            for
+                            birds and mammals.</b>”
+                    </p>
+                    <p class="section_text_box-2">They will not scream, but if you are willing to look closely, we can
+                        assure you that can see that.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_03">
+            <div class="section_03_image">
+                <img src="img/img_3.png" alt="img_3">
+                <img src="img/fish_3.png" alt="Fish" class="image_fish_3">
+            </div>
+            <div class="section_03_text">
+                <h2 class="section_numbers">03.</h2>
+                <h2 class="section_heading">Fish can think</h2>
+                <div class="section_text">
+                    <p class="section_text_box-1">That’s right. Saying that fish have memory span of 
+                        about 3 seconds is a myth. You can even teach them how to <b>use tools or 
+                        find objects</b> by obtaining clues from landscape.  </br>”
+                    </p>
+                    <p class="section_text_box-2">Some fish can even <b>cooperate</b> 
+                            and <b>communicate</b> between each other in groups.
+
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_04">
+            <div class="section_04_image">
+                <img src="img/img_4.png" alt="img_4">
+                <div class="section_04_image_text">
+                    <div class="box_1">
+                        <h4>01.</h4>
+                        <p>Almost all fishing methods inflict <b>long- term pain</b> and <b>stress</b> on fishes. </p>
+                    </div>
+                    <div class="box_2">
+                        <h4>02.</h4>
+                        <p>When caught by trawling nets they are pursued to <b>exhaustion</b> and <b>subsequently crushed</b> under
+                            the weight of other fish; </p>
+                    </div>
+                    <div class="box_3">
+                        <h4>03.</h4>
+                        <p>Fish suffer <b>painful decompression</b> of internal organs when raised from deep water; </p>
+                    </div>
+                    <div class="box_4">
+                        <h4>04.</h4>
+                        <p>Fish caught on long lines can stay <b>hooked, and dragged,</b> for <b>hours</b> or even <b>days</b>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="section_04_image_button">Sign the petition</button>
+
+            <div class="section_04_text">
+                <h2 class="section_heading">Main problems</h2>
+                <h3>Worldwide</h3>
+                <div class="section_04_text_box">
+                    <p>Some <b>1 trillion fishes</b> are caught each year worldwide. The severity,
+                        duration and sheer number of animals suffering makes fishing a <b>major animal welfare issue</b>
+                        that
+                        must be addressed. There is an urgent need to implement <b>fish</b> stunning or more effective
+                        methods
+                        of fish killing immediately after catching.
+                    </p>
+                    <button class="section_text_button"><a href="https://drive.google.com/open?id=1csI8mfmdTj74FykT42EsxNkFsDT506lF"
+                            target="_blank">Learn more</a></button>
+                </div>
+
+                <button onclick="ScrollToPetition()" class="section_button bg">Sign the petition</button>
+            </div>
+        </section>
+
+        <section class="section_solutions">
+            <div class="section_solutions_text">
+                <h2>Solutions</h2>
+                <p>The most urgent and significant change would be an <b> implementation of mandatory fish stunning.</b>
+                    Effective
+                    and humane fish slaughter methods already exist. <b>Fish stunning prior to slaughter</b> is
+                    available both
+                    for
+                    small scale aquaculture farmers and fishermen as well as for big scale producers and fisheries
+                    operations.</p>
+            </div>
+
+            <div class="section_solutions_cards-box">
+                <h2>What this petition stands for?</h2>
+                <div class="section_solutions_cards">
+
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fish.png" alt="card_1"></div>
+                        <p class="card_text">Demand humane methods of stunning before slaughter.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fish.png" alt="card_1"></div>
+                        <p class="card_text">Regulate stocking densities to levels that provide better fish welfare
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fish.png" alt="card_1"></div>
+                        <p class="card_text">Regulate fish transport.
+
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="img/fish.png" alt="card_1"></div>
+                        <p class="card_text">Invest in research focused on main farming species actual needs
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="img/shape.png" alt="Shape" class="shape">
+        </section>
+
+        <section class="section_steps">
+
+            <div class="step">
+                <img src="img/icons/note.png" alt="Step_1" class="step_img">
+                <h3 class="step_heading">1. Sign the petition</h3>
+            </div>
+
+            <div class="step">
+                <img src="img/icons/share.png" alt="Step_2" class="step_img">
+                <h3 class="step_heading">2. Share the campaign</h3>
+            </div>
+
+            <div class="step">
+                <img src="img/icons/talk.png" alt="Step_3" class="step_img">
+                <h3 class="step_heading">3. Talk about it</h3>
+            </div>
+        </section>
+
+        <section id="petition" class="section_petition">
+            <div class="section_petition_container">
+                <h2>Sign the petition</h2>
+                <h3>To : EU Department of European
+                    Commisions’s Scientific Panel on
+                    Animal Health and Welfare</h3>
+
+                <p class="petition_signed">1743 signed a petition. We need 1257 more to 3000.</p>
+                <div class="petition_signed_percentage">
+                    <div class="petition_signed_percentage_box-1">
+                        <p>58%</p>
+                    </div>
+                    <div class="petition_signed_percentage_box-2"></div>
+                </div>
+
+                <div class="petition_contact">
+                    <p class="petition_name">Name:
+                        <input type="text" name="email" placeholder="e.g. Hooked Nemo"></p>
+                    <p class="petition_email">Email:
+                        <input type="text" name="email" placeholder="e.g. iamhooked@mail.com"></p>
+                </div>
+                <p class="petition_system">The system is controled directly by ANIMA. It is our system and it is not
+                    linked to
+                    another database.</p>
+                <button class="section_petition_button">Sign the petition</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer_container">
+            <a class="footer_logo" onclick="ScrollToHome()"><img src="img/logo.png" alt="Logo" onmouseover="this.src='img/logo-blue.png'"
+                    onmouseout="this.src='img/logo.png'"></a>
+            <div class="footer_social-media">
+                <h2>Social media</h2>
+                <div class="footer_social-media_box">
+                    <img src="img/icons/facebook-5.png" onmouseover="this.src='img/icons/facebook-6.png'" onmouseout="this.src='img/icons/facebook-5.png'"
+                        alt="Facebook">
+                    <img src="img/icons/instagram-5.png" onmouseover="this.src='img/icons/instagram-6.png'" onmouseout="this.src='img/icons/instagram-5.png'"
+                        alt="Twitter">
+                    <img src="img/icons/twitter-5.png" onmouseover="this.src='img/icons/twitter-6.png'" onmouseout="this.src='img/icons/twitter-5.png'"
+                        alt="Instagram">
+                    <img src="img/icons/youtube-5.png" onmouseover="this.src='img/icons/youtube-6.png'" onmouseout="this.src='img/icons/youtube-5.png'"
+                        alt="Vimeo">
+                    <img src="img/icons/vimeo-5.png" onmouseover="this.src='img/icons/vimeo-6.png'" onmouseout="this.src='img/icons/vimeo-5.png'"
+                        alt="Youtube">
+                </div>
+            </div>
+
+            <div class="footer_newsletter">
+                <h2>Sign up for newsletter</h2>
+                <input type="text" name="email" placeholder="Enter your email">
+                <button class="newsletter_button">Sign Up</button>
+
+            </div>
+
+            <div class="footer_contact">
+                <h2>Contact</h2>
+                <div class="footer_contact_info">
+                    <div class="contact_info_box"><i class="fa fa-map-marker"></i>
+                        <p>Tornebuskegade 7, 1., 1131 København K </p>
+                    </div>
+                    <div class="contact_info_box"><i class="fa fa-envelope"></i>
+                        <p>info@anima.dk</p>
+                    </div>
+                    <div class="contact_info_box"><i class="fa fa-phone"></i>
+                        <p>35 10 70 70</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js" defer></script>
+
+</html>
