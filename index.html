@@ -18,15 +18,15 @@
         <nav>
             <div class="nav_desktop">
                 <div class="nav_desktop_logo">
-                    <a onclick="ScrollToHome()"><img src="img/logo.png" alt="Logo" onmouseover="this.src='img/logo-blue.png'"
+                    <a href="#home"><img src="img/logo.png" alt="Logo" onmouseover="this.src='img/logo-blue.png'"
                             onmouseout="this.src='img/logo.png'"></a>
                 </div>
                 <ul>
-                    <li><a onclick="ScrollToHome()">Home</a></li>
-                    <li><a onclick="ScrollToAbout()">About the campaign</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About the campaign</a></li>
                     <li><a href="https://drive.google.com/open?id=1csI8mfmdTj74FykT42EsxNkFsDT506lF" target="_blank">See
                             the original report</a></li>
-                    <a onclick="ScrollToPetition()" class="petition_button">Take action</a>
+                    <a href="#home" class="petition_button">Take action</a>
                 </ul>
             </div>
         </nav>
@@ -41,12 +41,12 @@
         <!-- Overlay Menu -->
         <div class="nav_mobile">
             <ul class="nav_mobile_menu">
-                <li><a onclick="myFunction(),ScrollToHome()">Home</a></li>
-                <li><a onclick="myFunction(),ScrollToAbout()" class="close_btn">About the campaign</a></li>
+                <li><a onclick="myFunction()" href="#home">Home</a></li>
+                <li><a onclick="myFunction()" href="#about" class="close_btn">About the campaign</a></li>
                 <li><a onclick="myFunction()" href="https://drive.google.com/open?id=1csI8mfmdTj74FykT42EsxNkFsDT506lF"
                         target="_blank">See
                         the original report</a></li>
-                <button onclick="myFunction(),ScrollToPetition()" class="petition_button close_btn">Take action</button>
+                <a href="#petition"></a> <button onclick="myFunction()" class="petition_button close_btn">Take action</button>
             </ul>
         </div>
 
@@ -60,9 +60,9 @@
                     of the fishes nor even discussions on this topic. You might ask why is it such a big issue? Well,
                     there
                     is more to the topic than you might think.</h2>
-                <a onclick="ScrollToAbout()"><button class="header_button">Learn more</button></a>
+                <a href="#about"><button class="header_button">Learn more</button></a>
             </div>
-            <img onclick="ScrollToAnima()" src="img/icons/arrow.png" alt="arrow" class="arrow"></img>
+            <img href="#anima" src="img/icons/arrow.png" alt="arrow" class="arrow"></img>
         </div>
 
 
@@ -189,7 +189,7 @@
                             target="_blank">Learn more</a></button>
                 </div>
 
-                <button onclick="ScrollToPetition()" class="section_button bg">Sign the petition</button>
+                <a href="#petition"></a> <button class="section_button bg">Sign the petition</button>
             </div>
         </section>
 
@@ -285,7 +285,7 @@
                 <p class="petition_system">The system is controled directly by ANIMA. It is our system and it is not
                     linked to
                     another database.</p>
-                <button onclick="ScrollToPetition()" class="section_petition_button">Sign the petition</button>
+                <a href="#petition"><button class="section_petition_button">Sign the petition</button></a>
             </div>
         </section>
 
@@ -293,7 +293,7 @@
 
     <footer>
         <div class="footer_container">
-            <a class="footer_logo" onclick="ScrollToHome()"><img src="img/logo.png" alt="Logo" onmouseover="this.src='img/logo-blue.png'"
+            <a class="footer_logo" href="#home"><img src="img/logo.png" alt="Logo" onmouseover="this.src='img/logo-blue.png'"
                     onmouseout="this.src='img/logo.png'"></a>
             <div class="footer_social-media">
                 <h2>Social media</h2>
