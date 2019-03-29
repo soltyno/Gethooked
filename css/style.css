@@ -49,10 +49,6 @@ input:focus {
     outline: none;
 }
 
-button:hover {
-    transform: scale(1.1);
-}
-
 img {
     width: 100%;
 }
@@ -115,12 +111,6 @@ img {
     color: white;
 }
 
-.header_button:hover {
-    transform: scale(1.1);
-}
-
-
-
 .arrow {
     position: absolute;
     bottom: 3%;
@@ -131,9 +121,6 @@ img {
     transition: 0.1s ease-in-out;
 }
 
-.arrow:hover{
-    transform: translateX(-50%) scale(1.2);
-}
 
 
 /*************** Navbar ***************/
@@ -190,12 +177,6 @@ nav {
     color: white;
     font-size: 1.7rem;
     font-weight: 400;
-}
-
-.nav_desktop li a:hover {
-    /* border-bottom: 1px solid rgb(28, 121, 184); */
-    color: var(--color-slightly-blue);
-    transition: all 1s ease;
 }
 
 /* Animated Bottom Line */
@@ -1203,6 +1184,24 @@ footer {
 
     .card:hover {
         transform: translateY(-10%);
+    }
+
+    .arrow:hover{
+        transform: translateX(-50%) scale(1.2);
+    }
+    
+    .header_button:hover {
+        transform: scale(1.1);
+    }
+
+    button:hover {
+        transform: scale(1.1);
+    }
+
+    .nav_desktop li a:hover {
+        /* border-bottom: 1px solid rgb(28, 121, 184); */
+        color: var(--color-slightly-blue);
+        transition: all 1s ease;
     }
 }
 
